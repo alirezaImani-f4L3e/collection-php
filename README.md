@@ -45,31 +45,51 @@ collection()->fetch() ;
 
 store a document in collection
 ```
-collection()->store($collectionName , [
+collection()->store(string $collectionName , [
     "fields"=>[]
 ]);
 ```
 
 update a document by id
 ```
-collection()->update($collectionName , $documentId , [
+collection()->update(string $collectionName ,int $documentId , [
     "fields"=>[]
 ]);
 ```
 
 update a document with other filters
 ```
-collection()->updateByWhere($collectionName , $filter , [
+collection()->updateByWhere(string $collectionName ,array $filter , [
     "fields"=>[]
 ]);
 ```
 
 find all documents with specified filter
 ```
-collection()->findAll($collectionName , $filter);
+collection()->findAll(string $collectionName ,array $filter);
 ```
 
 delete a document with specified filter
 ```
-collection()->deleteByWhere($collectionName , $filter);
+collection()->deleteByWhere(string $collectionName ,array $filter);
+```
+
+find a document by id 
+```
+collection()->findById(string $collectionName ,int $documentId);
+```
+
+find first document with given filter
+```
+collection()->findOne(string $collectionName ,array $filter);
+```
+
+delete a document by id 
+```
+collection()->delete(string $collectionName ,int $documentId);
+```
+
+delete multiple documents with an array of document ids
+```
+collection()->deleteMany(string $collectionName , array $documentIds);
 ```
