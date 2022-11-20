@@ -1,0 +1,25 @@
+{
+  "name": "rso/collection-php",
+  "friendly_name": "Collection PHP Client",
+  "description": "A PHP Client to Access collections",
+  "license": "AGPL-3.0-or-later",
+  "version": "0.0.1",
+  "type": "project",
+  "authors": [
+    {
+      "name": "rso",
+      "email": "rso@rso-co.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RSO\\Collection\\": "src"
+    },
+    "files": [
+      "src/Functions/helpers.php"
+    ]
+  }
+}
