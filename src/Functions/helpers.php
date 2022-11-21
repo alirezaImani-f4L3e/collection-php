@@ -11,7 +11,7 @@ if (!function_exists('collection')) {
     function collection($config = [] , $environment = "production")
     {
         return (new CollectionManager($config , $environment))->getCollection();
-    }
+    } 
 }
 
 function collection_config($key, $default = null)

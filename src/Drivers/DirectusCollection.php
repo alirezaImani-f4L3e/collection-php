@@ -242,12 +242,7 @@ class DirectusCollection implements CollectionInterface
                 array_push($results, $value["id"]);
             }
             $response = $this->deleteMany($collectionName, $results);
-            return [
-                "data" => [
-                    "statusCode" => 200,
-                    "results" => $response
-                ]
-            ];
+            return $response;
         } else {
             return [
                 'statusCode' => 404,
