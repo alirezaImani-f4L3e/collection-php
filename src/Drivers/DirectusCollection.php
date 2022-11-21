@@ -247,7 +247,7 @@ class DirectusCollection implements CollectionInterface
             return [
                 'statusCode' => 404,
                 'data' => [
-                    'errors' => [__('Not Found')]
+                    'errors' => ['Not found']
                 ],
             ];
         }
